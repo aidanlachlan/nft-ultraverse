@@ -106,7 +106,6 @@ nft-ultraverse/
 │   ├── App.jsx               # Router setup, global SkeletonTheme
 │   └── index.jsx             # React entry point
 │
-├── CLAUDE.md                 # Guidance for Claude Code
 └── package.json
 ```
 
