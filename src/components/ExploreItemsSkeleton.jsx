@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 
 const ExploreItemsSkeleton = () => {
@@ -21,8 +22,8 @@ const ExploreItemsSkeleton = () => {
             justifyContent: "center",
           }}
         >
-          <a
-            href="#"
+          <Link
+            to="#"
             style={{
                 marginTop: "50px"
             }}
@@ -36,7 +37,7 @@ const ExploreItemsSkeleton = () => {
                 padding: 0,
               }}
             />
-          </a>
+          </Link>
         </div>
         <div className="nft__item_info">
           <h4

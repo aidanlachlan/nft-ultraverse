@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 
 const NewItemsSkeleton = () => {
@@ -18,7 +19,7 @@ const NewItemsSkeleton = () => {
             justifyContent: "center",
           }}
         >
-          <a href="#">
+          <Link to="#">
             <Skeleton
               width={"100%"}
               height={175}
@@ -28,7 +29,7 @@ const NewItemsSkeleton = () => {
                 padding: 0,
               }}
             />
-          </a>
+          </Link>
         </div>
         <div className="nft__item_info">
           <h4
