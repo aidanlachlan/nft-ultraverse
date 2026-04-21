@@ -10,15 +10,6 @@
 
 ---
 
-## Screenshots
-
-![Hero Section](./screenshots/nft-hero.png)
-![Explore Page](./screenshots/nft-explore.png)
-![Item Details](./screenshots/nft-item-details.png)
-![Author Profile](./screenshots/nft-author.png)
-
----
-
 ## About
 
 NFT Ultraverse is a frontend NFT marketplace built with React. It lets users browse hot collections, discover new items, explore the full catalogue with filtering, and dig into individual NFT and creator pages — all backed by a live Google Cloud Functions API.
@@ -32,9 +23,20 @@ It's a solid reference for how to structure a data-driven React SPA: consistent 
 ## Features
 
 - **Home page** with hero section, hot collections carousel, new items grid, top sellers list, and browse-by-category section
+
+![Hero Section](./screenshots/nft-hero.png)
+
 - **Explore page** with live filtering by price (low-to-high, high-to-low) and likes (most liked)
+
+![Explore Page](./screenshots/nft-explore.png)
+
 - **Item details page** showing NFT metadata, owner, creator, and auction countdown timer
+
+![Item Details](./screenshots/nft-item-details.png)
+
 - **Author/creator profile pages** with profile banner, follower count, and the author's full NFT collection
+
+![Author Profile](./screenshots/nft-author.png)
 - **Skeleton loaders** for every data-fetching section — each skeleton matches the layout of the real content
 - **Scroll-triggered animations** via AOS on all major sections
 - **Responsive navigation** with a mobile hamburger menu
