@@ -1,13 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Timer from "./Timer";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const NftCard = ({ item }) => {
-  useEffect(() => {
-    AOS.init({});
-  }, []);
+  const [likes, setLikes] = useState(item.likes);
+  const [liked, setLiked] = useState(false);
+
+  function handleLikeClick() {
+    if (liked) {
+      setLiked(false);
+      setLikes((prev) => prev - 1);
+    } else {
+      setLiked(true);
+      setLikes((prev) => prev + 1);
+    }
+  }
 
   return (
     <div className="nft__item">
@@ -50,13 +57,13 @@ const NftCard = ({ item }) => {
         </Link>
       </div>
       <div className="nft__item_info">
-        <Link to="/item-details">
+        <Link to={`/item-details/${item.nftId}`}>
           <h4 data-aos='fade-in' data-aos-duration='700'>{item.title}</h4>
         </Link>
         <div className="nft__item_price" data-aos='fade-in' data-aos-duration='700'>{item.price} ETH</div>
-        <div className="nft__item_like" data-aos='fade-in' data-aos-duration='700'>
-          <i className="fa fa-heart"></i>
-          <span>{item.likes}</span>
+        <div className="nft__item_like" data-aos='fade-in' data-aos-duration='700' onClick={handleLikeClick} style={{ cursor: "pointer" }}>
+          <i className={`fa fa-heart${liked ? "" : "-o"}`}></i>
+          <span>{likes}</span>
         </div>
       </div>
     </div>

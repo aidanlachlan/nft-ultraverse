@@ -13,15 +13,18 @@ const ItemDetails = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   const [details, setDetails] = useState({});
+  const [likes, setLikes] = useState(0);
+  const [liked, setLiked] = useState(false);
 
   async function fetchDetails() {
     const { data } = await axios.get(
       `https://us-central1-nft-cloud-functions.cloudfunctions.net/itemDetails?nftId=${nftId}`
     );
     setDetails(data);
+    setLikes(data.likes);
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 300);
   }
 
   function renderItemDetails() {
@@ -50,9 +53,9 @@ const ItemDetails = () => {
                         <i className="fa fa-eye"></i>
                         {details.views}
                       </div>
-                      <div className="item_info_like">
-                        <i className="fa fa-heart"></i>
-                        {details.likes}
+                      <div className="item_info_like" onClick={() => { setLiked((prev) => !prev); setLikes((prev) => liked ? prev - 1 : prev + 1); }} style={{ cursor: "pointer" }}>
+                        <i className={`fa fa-heart${liked ? "" : "-o"}`}></i>
+                        {likes}
                       </div>
                     </div>
                     <p>{details.description}</p>

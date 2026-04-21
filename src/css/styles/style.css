@@ -8174,6 +8174,7 @@ a.btn-border,
 .nft_pic *,
 .d-carousel *,
 .nft__item_like *,
+.item_info_like *,
 .nft__item_click span:after,
 .nft__item_extra,
 .nft__item_extra *,
@@ -13585,6 +13586,10 @@ a.read_more i {
 
 .dark-scheme .item_info_counts > div i {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.item_info_like:hover i {
+  color: #ec7498;
 }
 
 .item_info h6 {
