@@ -40,7 +40,7 @@ It's a solid reference for how to structure a data-driven React SPA: consistent 
 - **Skeleton loaders** for every data-fetching section — each skeleton matches the layout of the real content
 - **Scroll-triggered animations** via AOS on all major sections
 - **Responsive navigation** with a mobile hamburger menu
-- **Carousel/slider** for hot collections (react-slick) and new items (keen-slider)
+- **Carousel/slider** for hot collections and new items (react-slick)
 
 ---
 
@@ -53,7 +53,7 @@ It's a solid reference for how to structure a data-driven React SPA: consistent 
 | HTTP Client | Axios 1.8.4                         |
 | Styling     | Bootstrap (CSS) + custom CSS        |
 | Animations  | AOS 3.0.0-beta.6                    |
-| Carousels   | react-slick 0.30.3 / keen-slider 6.8.6 |
+| Carousels   | react-slick 0.30.3                  |
 | Icons       | react-icons 4.3.1                   |
 | Skeletons   | react-loading-skeleton 3.5.0        |
 | Backend     | Google Cloud Functions (external)   |
