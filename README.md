@@ -30,7 +30,7 @@ It's a solid reference for how to structure a data-driven React SPA: consistent 
 
 ![Explore Page](./screenshots/nft-explore.png)
 
-- **Item details page** showing NFT metadata, owner, creator, and auction countdown timer
+- **Item details page** showing NFT metadata, owner, creator, and price
 
 ![Item Details](./screenshots/nft-item-details.png)
 
