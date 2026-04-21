@@ -22,7 +22,7 @@ const ExploreItemsSkeleton = () => {
           }}
         >
           <a
-            href=""
+            href="#"
             style={{
                 marginTop: "50px"
             }}

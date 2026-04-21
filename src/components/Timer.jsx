@@ -18,16 +18,16 @@ const Timer = ({ duration }) => {
         return `${hours}h ${minutes}m ${seconds}s`;
     };
 
-    const updateTimer = () => {
-        const remainingTime = duration - Date.now();
-        setTimeLeft(remainingTime);
-
-        if (remainingTime > 0) {
-            frameRef.current = requestAnimationFrame(updateTimer);
-        }
-    };
-
     useEffect(() => {
+        const updateTimer = () => {
+            const remainingTime = duration - Date.now();
+            setTimeLeft(remainingTime);
+
+            if (remainingTime > 0) {
+                frameRef.current = requestAnimationFrame(updateTimer);
+            }
+        };
+
         frameRef.current = requestAnimationFrame(updateTimer);
 
         return () => cancelAnimationFrame(frameRef.current);

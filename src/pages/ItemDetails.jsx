@@ -122,6 +122,7 @@ const ItemDetails = () => {
 
   useEffect(() => {
     fetchDetails();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return <>{isLoading ? <ItemDetailsSkeleton /> : renderItemDetails()}</>;

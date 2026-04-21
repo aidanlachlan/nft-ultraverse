@@ -18,7 +18,7 @@ const NewItemsSkeleton = () => {
             justifyContent: "center",
           }}
         >
-          <a href="">
+          <a href="#">
             <Skeleton
               width={"100%"}
               height={175}
