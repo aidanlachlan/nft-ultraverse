@@ -162,7 +162,7 @@ The `NftCard` component is reused across HotCollections, NewItems, ExploreItems,
 
 ## Live Demo
 
-nft-ultraverse.vercel.app
+https://nft-ultraverse.vercel.app/
 ---
 
 ## License & Contact
